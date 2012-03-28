@@ -1,0 +1,150 @@
+html { 
+  background-color:#333;
+}
+body {
+  background-color:#fff;
+	color:#000;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:62.5%;
+}
+
+article.page {
+  margin:0 auto;
+  padding-top:50px;
+  width:900px;
+}
+
+article.page h1.page {
+  border-bottom:1px solid #ddd;
+  font-family:Georgia, serif;
+  font-size:5em;
+  font-weight:normal;
+  font-style:italic;
+  line-height:0.7em;
+  margin-bottom:20px;
+  text-transform:lowercase;
+}
+
+section.page h1 {
+  font-size:2.5em;
+  font-weight:normal;
+  font-family:Georgia, serif;
+  margin-bottom:20px;
+}
+section.page p {
+  font-size:1.4em;
+}
+section.page ul {
+  list-style-type:disc;
+  list-style-position:inside;
+  margin-left:1.0em;
+  margin-bottom:10px;
+}
+
+footer.site { 
+  background-color:#333;
+  clear:both; 
+  color:#fff;
+}
+footer.site .grad { 
+  -webkit-box-shadow:#000 0px 5px 5px;
+  -moz-box-shadow:#000 0px 5px 5px;
+  height:1px;
+}
+footer.site hgroup {
+  float:left;
+  height:120px;
+  margin-bottom:20px;
+  margin-left:20px;
+  margin-top:20px;
+  text-shadow:#000 4px 4px 0;
+	-webkit-transition:text-shadow .2s linear;
+	-moz-transition:text-shadow .2s linear;
+	-o-transition:text-shadow .2s linear;
+}
+footer.site hgroup h1 {
+  font-size:8em;
+  font-weight:300;
+  letter-spacing:0;
+  position:absolute;
+}
+footer.site hgroup h2 {
+  font-size:4em;
+  font-weight:300;
+  letter-spacing:0;
+  margin-left:44px;
+  margin-top:70px;
+  position:absolute;
+}
+/*
+footer.site hgroup:hover em {
+  text-shadow:#000 4px 4px 0, #000 5px 5px 0, #000 6px 6px 0, #000 7px 7px 0, #000 8px 8px 0;
+}*/
+
+/* Footnotes */
+footer.site .footnotes {
+  float:right;
+  margin:20px;
+  text-align:right;
+}
+footer.site .footnotes ol {
+  list-style-type:none;
+}
+footer.site .footnotes li { 
+	-webkit-transition: background-color .4s linear, text-shadow .4s linear;
+	-moz-transition: background-color .4s linear, text-shadow .4s linear;
+	-o-transition: background-color .4s linear, text-shadow .4s linear;
+	transition: background-color .4s linear, text-shadow .4s linear;
+  margin-bottom:10px; 
+  min-width:300px;
+  padding:5px;
+}
+footer.site .footnotes li:hover { 
+  background-color:rgba(255,255,255,0.1); 
+  text-shadow:#000 2px 2px 0;
+}
+footer.site .footnotes li h1 {
+  font-size:1.3em;
+  margin-bottom:5px;
+}
+footer.site .footnotes li h1 a {
+  color:#fff;
+  font-weight:normal;
+  text-decoration:none;
+  border-bottom:1px solid #999;
+}
+footer.site .footnotes li h1 a:hover {
+}
+footer.site .footnotes footer {
+  font-size:1.2em;
+}
+footer.site .footnotes em {
+  margin-right:5px;
+  font-style:italic;
+}
+footer.site .footnotes time {
+  color:#999;
+}
+
+footer aside.legal {
+  clear:both;
+  color:#999;
+  margin-bottom:10px;
+  text-align:center;
+  letter-spacing:0.1em;
+  word-spacing:0.2em;
+}
+footer aside.legal p {
+  font-style:italic;
+  margin-bottom:5px;
+}
+footer aside.legal a {
+  color:#999;
+}
+
+
+/* navigation */
+footer.site nav {
+  clear:both;
+  float:left;
+}

@@ -1,0 +1,219 @@
+/**
+ * No site header for this one
+ */
+header.site { display:none; }
+
+article.page { 
+  background-color:#fff;
+  height:600px;
+  margin:0;
+  padding-top:0;
+  overflow:hidden;
+  width:auto;
+}
+
+#fb-live {
+  float:left;
+  height:600px;
+  overflow:hidden;
+  position:absolute;
+}
+#fb-live .post {
+  background-color:#fff;
+  background-position:center center;
+  background-repeat:no-repeat;
+  float:left;
+  height:200px;
+  left:-200px;
+  position:absolute;
+  top:-200px;
+  width:200px;
+}
+#fb-live .post .msg {
+  background-color:rgba(255,255,255,0.8);
+  font-size:1.5em;
+  height:180px;
+  opacity:0;
+  overflow:hidden;
+  padding:10px;
+  position:absolute;
+	-webkit-transition: opacity .4s linear;
+	-moz-transition: opacity .4s linear;
+	-o-transition: opacity .4s linear;
+	transition: opacity .4s linear;
+  width:180px;
+}
+#fb-live .post .msg:hover { 
+  opacity:1; 
+}
+#fb-live .post .msg p { margin-bottom:5px; }
+#fb-live .msg .ft { color:#666; }
+#fb-live .msg .ft em {
+  margin-right:5px;
+  font-style:italic;
+}
+#fb-live .msg .ft .time { 
+  font-size:0.8em;
+  display:block; 
+}
+
+#adios-fb {
+  height:460px;
+  margin:0 auto 20px auto;
+  width:440px;
+}
+#adios-fb .circle {
+  border-radius:360px 360px 360px 360px;
+  -moz-border-radius:360px 360px 360px 360px;
+  -webkit-border-radius:360px 360px 360px 360px;
+  -opera-border-radius:360px 360px 360px 360px;
+  border-color:#900;
+  border-width:40px;
+  border-style:solid;
+  display:none;
+  height:358px;
+  position:absolute;
+  top:20px;
+  width:358px;
+}
+#adios-fb .circle .stroke {
+  background-color:#900;
+  display:block;
+  height:359px;
+  left:160px;
+  top:-2px;
+  position:relative;
+  width:40px;
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+}
+
+#adios-fb .fb {
+  background-color: rgb(57,74,115);
+  background-image: -moz-radial-gradient(90px 290px, circle cover, rgba(93,138,211,1.0) 10%, rgba(57,74,115,.5) 100%);
+  background-image: -webkit-gradient(radial, 150 250, 90, 150 250, 290, from(rgba(93,138,211,.9)), to(rgba(57, 74, 115, .8)));
+  border-radius:30px 30px;
+  -moz-border-radius:30px 30px;
+  -webkit-border-radius:30px 30px;
+  -webkit-box-shadow:rgba(30,30,30,.9) 0 2px 5px;
+  -moz-box-shadow:rgba(30,30,30,.9) 0 2px 5px;
+  display:block;
+  height:300px;
+  left:75px;
+  overflow:hidden;
+  position:relative;
+  top:90px;
+  width:290px;
+}
+#adios-fb .highlight-top {
+  background-image: -webkit-gradient(radial, 145 -100, 80, 145 0, 190, from(transparent), to(rgba(255,255,255,0)), color-stop(90%, rgba(255,255,255,0.8)));
+  border-radius:30px 30px 0 0;
+  -moz-border-radius:30px 30px 0 0;
+  -webkit-border-radius:30px 30px 0 0;
+  /*background-color:#fff;*/
+  display:block;
+  display:none;
+  opacity:0.4;
+  position:absolute;
+  height: 180px;
+  width: 290px;
+}
+#adios-fb .highlight-bottom {
+  background-color: rgba(144, 174, 224, .9);
+  border-radius:0 0 30px 30px;
+  -moz-border-radius:0 0 30px 30px;
+  -webkit-border-radius:0px 0px 30px 30px;
+  display:block;
+  float:left;
+  height: 65px;
+  position:relative;
+  top:235px;
+  width: 290px;
+}
+#adios-fb .f {
+  display:block;
+  float:right;
+  left:-40px;
+  position:relative;
+  top:15px;
+  width:100px;
+}
+#adios-fb .f .bd {
+  background-color:#fff;
+  display:block;
+  height:220px;
+  width:50px;
+}
+#adios-fb .f .cross {
+  background-color:#fff;
+  display:block;
+  height:40px;
+  float:left;
+  left:-30px;
+  position:relative;
+  width:115px;
+}
+#adios-fb .f .cross-cap {
+  border-top:0 solid transparent;
+  border-right:0 solid transparent;
+  border-bottom:40px solid transparent;
+  border-left:5px solid #fff;
+  display:block;
+  float:right;
+  left:5px;
+  position:relative;
+}
+#adios-fb .f .arc {
+  border-radius:80px 0 0 0;
+  -moz-border-radius:80px 0 0 0;
+  -webkit-border-radius:80px 0 0 0;
+  border-color:#fff;
+  background-color:#fff;
+  border-width:0;
+/*        border-width-top:50px;
+  border-width-left:50px;*/
+  border-style:solid;
+  display:block;
+  float:right;
+  position:relative;
+  left:-10px;
+  top:-50px;
+  height:50px;
+  width:90px;
+}
+#adios-fb .f .arc-cap {
+  border-top:0 solid transparent;
+  border-right:0 solid transparent;
+  border-bottom:50px solid transparent;
+  border-left:5px solid #fff;
+  display:block;
+  float:right;
+  left:5px;
+  position:relative;
+}
+
+/** copy formatting **/
+section.why { 
+  background-color:rgba(255,255,255,0.75);
+  border-radius:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  clear:both;
+  text-align:center; 
+  margin:0 auto;
+  padding:15px;
+  position:relative;
+  width:680px;
+}
+section.why h1 { 
+  font-family:Georgia, Serif;
+  font-size:4em;
+  font-style:italic;
+  font-weight:normal;
+  margin-bottom:10px;
+}
+section.why h6 { 
+  font-size:1.4em;
+  font-weight:normal;
+}
