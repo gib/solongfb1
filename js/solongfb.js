@@ -24,7 +24,7 @@ $(function() {
     width:          $(window).width(),
     height:         $fb_live.outerHeight(true),
     columns:        Math.ceil($(window).width() / section_height),
-    rows:           Math.ceil($fb_live.outerHeight(true) / section_width),
+    rows:           Math.ceil($fb_live.outerHeight(true) / section_width) + 1,
     post_max_len:   180,
     section_width:  section_width,
     section_height: section_height,
@@ -64,7 +64,8 @@ $(function() {
                       return dims;
                     },
     post_html:      ['<div id="~POST_ID~" class="floats post" ',
-                     'style="background-image:url(http://graph.facebook.com/~ID~/picture?type=large);">',
+                     //'style="background-image:url(http://graph.facebook.com/~ID~/picture?type=large);">',
+                     'style="background-color:#666;">',
                      '  <div class="msg">',
                      '    <p>~MSG~</p>',
                      '    <div class="ft">',
@@ -104,16 +105,17 @@ $(function() {
   //
   $fb_live.bind('kick_start', function(evnt) {
     state.width = $(window).width();
+    state.height = $(window).height();
     state.set_columns();
     state.set_order();
     $fb_live
-      .css('width', state.width+'px')
+      .css({ width: state.width+'px', height: state.height+'px' })
       .trigger('get_posts');
   });
 
   // window resize
   $(window).resize(function() {
-    $fb_live.css('width', $(window).width());
+    $fb_live.css({ width: $(window).width()+'px', height: $(window).height()+'px' })
   });
 
   // Grid is full
@@ -122,13 +124,17 @@ $(function() {
     state.final_say = state.final_say.reverse();
     var $sub = $('article.page .why h6');
     var type_final_say = function() {
-      if (state.final_say.length === 0) { return; }
+      if (state.final_say.length === 0) { 
+        $('section.why').addClass('done');
+        return; 
+      }
       var ins = state.final_say.pop() + ')';
       var txt = jQuery.trim($sub.text());
       $sub.text(txt.substring(0,txt.length-1) + ins);
       window.setTimeout(type_final_say, 200);
     };
     type_final_say();
+    
   });
 
   // Handle requests for new fb posts
@@ -201,8 +207,8 @@ $(function() {
       .fadeIn(speed);
 
     state.timeout = window.setTimeout(function() { 
-      var new_dur = state.duration - 200;
-      state.duration = Math.max(1000, new_dur);
+      var new_dur = state.duration - 300;
+      state.duration = Math.max(300, new_dur);
       $fb_live.trigger('display_post');
     }, state.duration);
   });
