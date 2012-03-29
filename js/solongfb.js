@@ -64,8 +64,7 @@ $(function() {
                       return dims;
                     },
     post_html:      ['<div id="~POST_ID~" class="floats post" ',
-                     //'style="background-image:url(http://graph.facebook.com/~ID~/picture?type=large);">',
-                     'style="background-color:#666;">',
+                     'style="background-image:url(http://graph.facebook.com/~ID~/picture?type=large);">',
                      '  <div class="msg">',
                      '    <p>~MSG~</p>',
                      '    <div class="ft">',
