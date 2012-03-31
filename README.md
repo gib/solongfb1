@@ -8,8 +8,7 @@ Specifically his [Curtis CSS Typfase](http://desandro.com/resources/curtis-css-t
 [Opera logo with CSS](http://desandro.com/articles/opera-logo-css/) were great assets.
 I'm a huge fan of his work.
 
-[_So Long, and Thanks for All the Pokes #1_](http://shortforgilbert.com/experiments/solongfb1)
-[source](http://github.com/gib/solongfb1)
+[_So Long, and Thanks for All the Pokes #1_](http://shortforgilbert.com/experiments/solongfb1/)
 
 
 ## The Facebook Mark Markup
