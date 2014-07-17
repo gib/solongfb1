@@ -36,7 +36,7 @@ The JavaScript is not my best work, but hopefully read-able, see `js/solongfb.js
 
 ## The Content
 
-I borrowed from Openbook.org to pull recent public Facebook posts using the open "social graph" API.
+I borrowed from Openbook.org to pull recent public Facebook posts using the open social graph API.
 
 
 ## Footnotes
