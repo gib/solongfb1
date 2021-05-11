@@ -4,7 +4,7 @@ Facebook has some amazing tech and is clearly a great platform. It just isn't fo
 Once I deleted my account I wanted to mark the occasion.
 
 Inspired by [David Desandro](http://desandro.com), I created a Facebook mark out of HTML and CSS.
-Specifically his [Curtis CSS Typfase](http://desandro.com/resources/curtis-css-typeface/) and 
+Specifically his [Curtis CSS Typeface](http://desandro.com/resources/curtis-css-typeface/) and 
 [Opera logo with CSS](http://desandro.com/articles/opera-logo-css/) were great assets.
 I'm a huge fan of his work.
 
